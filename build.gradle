@@ -26,11 +26,13 @@ repositories {
 
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-jdbc',
-	        'org.springframework.boot:spring-boot-starter-webflux',
-            'org.projectlombok:lombok:1.16.20'
+            'org.apache.commons:commons-dbcp2:2.2.0',
+            'org.projectlombok:lombok:1.16.20',
+            'com.h2database:h2:1.4.197'
 	testCompile 'org.springframework.boot:spring-boot-starter-test',
 	            'io.projectreactor:reactor-test',
                 'org.codehaus.groovy:groovy-all:2.4.15',
                 'org.spockframework:spock-core:1.1-groovy-2.4',
                 'org.spockframework:spock-spring:1.1-groovy-2.4'
+    testRuntime 'com.h2database:h2:1.4.197'
 }
