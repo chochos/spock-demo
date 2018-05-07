@@ -1,0 +1,6 @@
+CREATE TABLE ejemplo(
+  clave  SERIAL PRIMARY KEY,
+  nombre VARCHAR(40) NOT NULL,
+  creado TIMESTAMP NOT NULL,
+  monto  NUMERIC(8,2) NOT NULL
+);
